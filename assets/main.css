@@ -1,0 +1,74 @@
+body {
+    background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation-name: bgslides;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgslides {
+    0% {background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);}
+    32% {background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);}
+    33% {background-image: url(./imgs/OLP-12.jpg);}
+    65% {background-image: url(./imgs/OLP-12.jpg);}
+    66% {background-image: url(./imgs/Field+of+Guitars.jpg);}
+    99% {background-image: url(./imgs/Field+of+Guitars.jpg);}
+}
+
+div {
+    border-style: dashed;
+    border-color: aquamarine;
+}
+
+.navname {
+    display: inline-block;
+    flex: 1;
+    color: white;
+}
+
+@media screen and (min-width: 1000px){
+    .navtim {
+        display: inline-block;
+    }    
+}
+
+.topnav {
+    display: flex;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* float: right; */
+    text-align: right;
+    flex: 2;
+    margin-right: 10px;
+}
+
+li{
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+.insta {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.facebook {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
