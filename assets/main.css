@@ -9,35 +9,53 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes bgslides {
-    0% {background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);}
-    32% {background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);}
-    33% {background-image: url(./imgs/OLP-12.jpg);}
-    65% {background-image: url(./imgs/OLP-12.jpg);}
-    66% {background-image: url(./imgs/Field+of+Guitars.jpg);}
-    99% {background-image: url(./imgs/Field+of+Guitars.jpg);}
-}
+/* This was one of the more challenging parts of the project, mimicking the slideshow animation displayed on the original site. Through some trial and error this animation is nearly identical. */
 
-div {
-    border-style: dashed;
-    border-color: aquamarine;
+@keyframes bgslides {
+    0% {
+        background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);
+    }
+
+    32% {
+        background-image: url(./imgs/Lonnie+Holley\,+2017.jpg);
+    }
+
+    33% {
+        background-image: url(./imgs/OLP-12.jpg);
+    }
+
+    65% {
+        background-image: url(./imgs/OLP-12.jpg);
+    }
+
+    66% {
+        background-image: url(./imgs/Field+of+Guitars.jpg);
+    }
+
+    99% {
+        background-image: url(./imgs/Field+of+Guitars.jpg);
+    }
 }
 
 .navname {
     display: inline-block;
     flex: 1;
     color: white;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
     .navtim {
         display: inline-block;
-    }    
+    }
 }
 
 .topnav {
     display: flex;
 }
+
+/* I also dedicated some time to replicating the navbar from the base site, down to how the name and actual navbar collapse when resizing the window. */
 
 nav {
     list-style-type: none;
@@ -49,7 +67,7 @@ nav {
     margin-right: 10px;
 }
 
-li{
+li {
     display: inline-block;
 }
 
